@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 28 Mar 2015 23:19:33 GMT">
+    <meta name="description" content="Game Page 1">
+    <meta name="keywords" content="Resume, Game, Hobbies, Experience">
+    <title>Choose Your Own Adventure</title>
+	<link rel="shortcut icon" type="image/x-icon" href="Icons/favicon.ico">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/game.app.js"></script>
+	<link type="text/css" rel="stylesheet" href="StyleSheets/gamestylesheet2.css">
+    </head>
+    <body>
+    <!---Header for choose your own--->
+      <div class="header">
+        <h1>Choose Your Own <span id="adventure">Adventure!</span><h1>
+      </div>
+	  
+      <!---Statement--->
+        <div class="statement"><p>Before you lay a series of choices.
+			<br><br>
+			This is your chance to test <em>your</em> skills while observing <em>mine</em>.<br>			
+			<br>Find out if you have what it takes to be a great adventurer.<br>
+			<br>Find out if I have what it takes to be the next great member of your team.
+			</p>
+        </div>
+		<div class="instructions choose"> 
+		<p id='goTo'>Choose where you would like to begin your adventure by clicking one of the links below.</p>
+		<p id='goTo2'></p>	
+		</div>
+		  
+    <!----Pictures---->
+    <div id="pics">
+		<form>      
+          <div class="pictures" onclick='setLoc(1)' ><p id="desert">Desert</p></div>
+          <div class="pictures" onclick='setLoc(2)'><p id="mountains">Mountains</p></div>
+          <div class="pictures" onclick='setLoc(3)'><p id="city">City</p></div>
+          <div class="pictures" onclick='setLoc(4)'><p id="tropics">Tropics</p></div>
+		</form> 
+    </div>  
+			<div class="instructions">
+				 <ul>
+				 	<li><a href="index.html">Home</a></li>
+				 	<li><a href="Resume.html">Resume</a></li>
+				</ul>
+				
+			</div>
+
+    </body>
+</html>
