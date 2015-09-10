@@ -1,0 +1,97 @@
+body {
+    background:#004D40;
+    margin:0%;
+}
+
+.header {
+    background-color:#009688;
+    display:inline-block;
+    text-align:center;
+    width:100%;
+    height:9em;
+    font-family:Lucida Console, Impact;
+    }
+.header h1 {
+    padding-top:.5em;
+    color:#E0F2F1;
+    text-shadow:1px 1px 1px black;
+}
+#adventure {
+    font-family:Impact;
+    color:#FFB300;
+    font-size:300%;
+    text-shadow:3px 3px 4px black;
+}
+/****Choice Pictures****/
+.pictures {
+    background-color:#000000;
+    height:10em;
+    width:23%;
+    display:inline-block; 
+    box-shadow: .7em .7em 1.5em;
+    border-radius:5px;
+    margin-top:.5em;
+    margin-left:.5em;
+    margin-bottom:5%;
+}
+
+div .pictures:hover {
+    border-radius:100%;
+    cursor:pointer;
+}
+.pictures:first-child {
+    background-image:url("../images/Desert.jpg");
+}
+.pictures:nth-child(2) {
+    background-image:url("../images/Mountain.jpg");
+}
+.pictures:nth-child(3) {
+    background-image:url("../images/City.jpg");
+}
+.pictures:nth-child(4) {
+    background-image:url("../images/Tropical.jpg");
+}
+.pictures p {
+    background-color:#4DB6AC;
+    margin-top:8em;
+    margin-left:4em;
+    margin-right:4em;
+    text-align:center;
+    border-radius:5px;
+    border:1px inset #00695c;
+
+}
+.statement {
+   margin-top:2em;
+   margin-left:2em;
+   margin-right:2em;
+   text-align:center;
+   color:white;
+   font-size:2em;
+   position:static;
+}
+
+.instructions{
+margin-left:-1%;
+margin-right:-1%;
+background-color:#009688;
+box-shadow:2px 2px 3px black;
+color:#FFB300;
+text-shadow:1px 1px 1px black;
+text-align:center;
+}
+.choose{
+padding:5% 2%;
+font-size:150%;
+}
+.instructions li{
+margin-top:3%;
+margin-bottom:1%;
+text-decoration:none;
+list-style-type:none;
+display:inline-block;
+}
+instructions a{
+text-decoration:none;
+display:inherit;
+}

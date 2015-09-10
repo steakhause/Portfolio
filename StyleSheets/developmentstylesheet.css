@@ -1,0 +1,280 @@
+/* General */
+body{
+	position:relative;
+	height:100%;
+	width:100%;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+	font-family:"Lucida Sans Unicode";
+}
+
+
+/* Header */
+.navbar{
+	background-color:#424242!important;
+}
+.navbar-header { 
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;  
+	display:block; 
+	height:4em;
+	margin-top:1em;
+	color:black;
+	/*background-color:#00695c;*/
+  }
+
+#nav-icon{
+	float:left;
+	height:3em;
+	width:3em;
+	margin-right:1em; 	
+}
+
+/* Menu */ 
+.navbar-header p{
+	font-family:impact;
+	font-size:200%;
+	color:black;
+}
+#menu{
+	margin-top:1em;
+}
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #ddd;
+}
+
+.slide {
+	display: none;
+	position:relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+}
+
+/* Slider */
+
+.active-slide {
+    display: block;
+}
+
+.slide-tomorrow h1 {
+  color: #b7b7b7;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;  
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+.slide-understand p {
+  color: #959595;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+ /* margin-bottom: 15px;*/
+  margin-top: 16px;
+}
+.slide-tomorrow h2 {
+  color: #E91E63;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;  
+  font-size: 40px;
+  margin: 5px;
+}
+
+.image1 img{
+	height:124px;
+	width:124px;
+	
+}
+.image1{
+	width:100%;
+	margin:0 auto 0;
+	text-align:center;
+	padding:20px 10px 0;
+}
+.image1 p{
+	margin:0 10px 0;
+	width:124px;
+	text-align:center;
+	display:inline-block;
+}
+/* Slide feature */
+#moving-background{
+    background-image:url("../images/trees.jpg");
+	background-size:cover;
+	background-position:50% 50%;
+	margin-top:-20px;
+}
+.moving-text{
+	text-align:center;
+	padding-top:2em;
+	font-family:Impact;
+}
+.slide-moving{
+	display:block;
+	position:relative;
+	margin-left:6em;
+}
+.move{
+	font-family:Impact;
+	font-size:0em;
+	height:0px;
+	width:0px;
+	position:absolute;
+	margin-top:30px;
+	margin-left:60px;
+	box-shadow:2px 2px 2px black;
+	text-shadow:2px 2px 2px black;
+	padding-top:10px;
+	border-radius:5px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-color:white;
+	color:red;
+}
+#box-one{
+	background-image:url('../images/HTML-5.png');
+	
+}
+#box-two{
+	height:75px;
+	width:75px;
+	background-color:#D50000;
+	border-radius:100%;
+	position:relative;
+	top:0;
+	left:30;
+	text-align:center;
+	box-shadow:5px 5px 5px black;
+	vertical-align:middle;
+	font-size:4em;
+	color:white;
+}
+#box-two a{
+	color:white;
+	text-decoration:none;
+}
+#box-three{
+	background-image:url('../images/jquery.png');
+}
+#box-four{
+	background-image:url('../images/CSS-3.png');
+}
+#box-five{
+	background-image:url('../images/js.png');
+}
+.slider-nav {
+	width:100%;
+	text-align: center;
+	vertical-align:top;
+	position:absolute;
+	bottom:1%;
+}
+.slider-nav p{
+font-size:200%; 
+color:black;
+}
+.arrow {
+    display: inline-block;
+	text-decoration:none;
+	vertical-align:middle;
+	background-color:#424242;
+	border-radius:100%;
+	/*text-align:center;*/
+	height:40px;
+	width:40px;
+	box-shadow:2px 2px 2px black;
+	font-weight:bold;
+}
+.arrow a{
+	text-decoration:none;
+}
+#arrow-prev{
+	margin-right:20px;
+}
+#arrow-next{
+	margin-left:20px;
+}
+.arrow:hover {
+ 	background-color:#9E9E9E;
+	box-shadow:4px 4px 4px;
+}
+
+.slider-dots {
+	list-style: none;
+	display: inline-block;
+  	vertical-align:middle;
+	padding-right:20px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.slider-dots li {
+  color: #B9F6CA;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #004D40;
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.body{
+		overflow:scroll;
+	}
+	.navbar-header{
+		height:1em;
+	}
+	#nav-icon, .slider-nav{
+		display:none;
+		position:relative;
+	}
+	.slider{
+		margin-top:-20px;
+		overflow:scroll;
+		height:100%;
+	 }
+	.slide, .active-slide, .container{
+		display:block;
+	}
+	/*.active-slide img, .slide img{
+		margin: 0 0 80px;
+		padding:10px 0 10px;
+		overflow:visible;
+		height:100%;
+		float:none;
+		vertical-align:bottom;
+	 }
+*/
+	 .slide-moving, .active-slide{
+		 float:none;
+		 width:100%;
+		 position:relative;
+	 }
+	.slide-understand{
+		margin-top:-20px;
+	}
+	.slide-moving{
+		margin-left:1em;
+	}
+	/*.image1{
+		padding:0;
+		vertical-align:bottom;
+		margin-top:80px;
+	}
+	img{
+		border: 2px solid black;
+	}*/
+}
